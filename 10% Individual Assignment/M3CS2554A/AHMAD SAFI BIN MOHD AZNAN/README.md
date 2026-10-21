@@ -192,7 +192,7 @@ The experiment illustrates that image-processing methods should be selected acco
 ## 8. References
 
 1. Canny, J. (1986). A computational approach to edge detection. *IEEE Transactions on Pattern Analysis and Machine Intelligence, PAMI-8*(6), 679–698. https://doi.org/10.1109/TPAMI.1986.4767851
-2. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image processing, analysis, and machine vision* (4th ed.). Cengage Learning.
+2. Canny, J. (1986). A computational approach to edge detection. *IEEE Transactions on Pattern Analysis and Machine Intelligence, PAMI-8*(6), 679–698. [https://doi.org/10.1109/TPAMI.1986.4767851](https://doi.org/10.1109/TPAMI.1986.4767851)
 3. OpenCV. (n.d.). *Basic operations on images*. OpenCV Documentation. https://docs.opencv.org/4.x/d3/df2/tutorial_py_basic_ops.html
 4. OpenCV. (n.d.). *Smoothing images*. OpenCV Documentation. https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
 5. OpenCV. (n.d.). *Canny edge detection*. OpenCV Documentation. https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html
