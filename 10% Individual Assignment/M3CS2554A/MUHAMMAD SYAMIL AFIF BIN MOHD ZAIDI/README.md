@@ -110,6 +110,6 @@ Threading provided limited improvements for CPU-intensive rendering operations. 
 
 ## REFERENCES
 
-1. Hughes, J. F., Van Dam, A., McGuire, M., Sklar, D. F., Foley, J. D., Feiner, S. K., & Akeley, K. (2013). *Computer Graphics: Principles and Practice* (3rd ed.). Addison-Wesley Professional. Available at: [Google Books - Computer Graphics](https://books.google.com/books?id=hNWjBQAAQBAJ)
-2. Akenine-Möller, T., Haines, E., & Hoffman, N. (2018). *Real-Time Rendering* (4th ed.). CRC Press. Available at: [Real-Time Rendering Resources](https://www.realtimerendering.com/)
-3. Python Software Foundation. (n.d.). *multiprocessing — Process-based parallelism*. Python 3 Documentation. Available at: [Python Official Documentation](https://docs.python.org/3/library/multiprocessing.html)
+1. Scratchapixel. (n.d.). *Foundation of Computer Graphics and Rendering*. This comprehensive online article covers the basic principles of generating 3D images on a 2D screen. Available at: [https://www.scratchapixel.com/](https://www.scratchapixel.com/)
+2. Real Python. (n.d.). *Speed Up Your Python Program With Concurrency*. A detailed article explaining how to use threading and multiprocessing to overcome execution bottlenecks in Python. Available at: [https://realpython.com/python-concurrency/](https://realpython.com/python-concurrency/)
+3. Python Software Foundation. (n.d.). *multiprocessing — Process-based parallelism*. Official documentation and reading material on how Python handles multiple CPU cores. Available at: [https://docs.python.org/3/library/multiprocessing.html](https://docs.python.org/3/library/multiprocessing.html)
