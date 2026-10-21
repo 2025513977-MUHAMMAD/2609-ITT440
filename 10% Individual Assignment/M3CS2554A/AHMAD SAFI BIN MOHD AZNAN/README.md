@@ -175,6 +175,9 @@ The article provides a reproducible example and a proposed framework for compari
 1. Gonzalez, R. C., & Woods, R. E. (2018). *Digital Image Processing* (4th ed.). [Pearson](https://www.pearson.com).
 2. Canny, J. (1986). A computational approach to edge detection. *IEEE Transactions on Pattern Analysis and Machine Learning*, PAMI-8(6), 679-698. [IEEE Xplore](https://ieeexplore.ieee.org/document/4767851).
 3. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image Processing, Analysis, and Machine Learning* (4th ed.). [Cengage Learning](https://www.cengage.com).
+4. OpenCV. (n.d.). Basic operations on images. *OpenCV Documentation*. https://docs.opencv.org/4.x/d3/df2/tutorial_py_basic_ops.html
+5. OpenCV. (n.d.). Smoothing images. *OpenCV Documentation*. https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
+6. OpenCV. (n.d.). Canny edge detection. *OpenCV Documentation*. https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html
 
 ## 9. YouTube Demonstration
 
