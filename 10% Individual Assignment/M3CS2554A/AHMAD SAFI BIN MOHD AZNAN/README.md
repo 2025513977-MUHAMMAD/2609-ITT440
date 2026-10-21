@@ -97,7 +97,7 @@ cv2.imwrite("edges.jpg", edges)
 
 ## 5. Complete Example Program
 
-The following script combines the three operations and creates a four-panel comparison. It is adapted from standard usage patterns described in the OpenCV documentation and reference literature.
+The following script combines the three operations and creates a four-panel comparison. It is adapted from standard usage patterns described in the OpenCV documentation; see the references below.
 
 ```python
 import cv2
@@ -162,33 +162,7 @@ After running the example, upload `comparison.png` into the GitHub repository an
 
 For grayscale conversion, inspect whether areas with different colors become similar in brightness. For Gaussian blur, look for reduced fine texture and softened boundaries. For Canny edge detection, examine whether the major object outlines are visible and whether unwanted texture produces extra lines. These observations should be updated to describe the actual input image once results are available.
 
-## 7. Discussion
-
-The three techniques illustrate different ways of representing visual information. Grayscale conversion reduces the number of channels and can simplify algorithms that do not need color. It is often a useful preprocessing step, but it may discard information important to color-based tasks. For example, two objects with different colors can have similar grayscale intensities, making them difficult to distinguish after conversion.
-
-Gaussian blur addresses a different problem: unwanted small-scale variation. Because it combines nearby pixel values, it can smooth fine textures and reduce certain noise patterns. This can be useful before edge detection, when noisy intensity changes might otherwise produce many false boundaries. Nevertheless, smoothing always involves a trade-off. A strong blur may remove fine details that are important for recognizing small objects or preserving sharp edges.
-
-Canny edge detection emphasizes structural information rather than overall brightness or color. Its output is typically a binary edge map, making it visually distinct from grayscale and blurred images. Edges can support tasks such as shape analysis, object boundary identification, and document processing. However, the detector does not understand which edges correspond to meaningful objects. It only responds to patterns of intensity change. Therefore, textured backgrounds, shadows, and noise can create edges that are not useful for the intended application.
-
-These operations should not be ranked using a single measure of visual quality because they have different goals. A grayscale image is not necessarily better or worse than an edge map; each representation supports a different task. A fair comparison should ask whether an operation is appropriate for its intended purpose and how its parameters affect the output.
-
-The proposed demonstration also has limitations. It uses one input image, fixed filter settings, and a qualitative comparison. Results might change substantially with a different image, lighting condition, resolution, or noise level. More extensive work could compare several images and vary the Gaussian kernel size and Canny thresholds. It could also measure processing time, but timings would need to be collected on an actual computer and reported with the test environment and number of repeated runs.
-
-## 8. Applications of Image Processing
-
-Image processing is useful in many practical settings. In document scanning, grayscale conversion can simplify text extraction workflows. In photography, smoothing filters can reduce distracting texture or noise, although excessive filtering may lower sharpness. In industrial inspection, edge detection can help reveal boundaries or changes in manufactured objects. Similar operations appear in robotics, medical imaging, traffic monitoring, and computer vision systems, usually as parts of larger processing pipelines.
-
-For networked applications, image processing can be performed on images uploaded to a server or received from a camera. A service might receive an image, apply preprocessing, and return a result to a client. This creates a connection between image processing and network programming: the application must handle image transfer, processing time, and response delivery. The present article concentrates on the image transformations themselves, rather than implementing a network service.
-
-## 9. Recommendations and Future Improvements
-
-A useful next step would be to run the example on several types of images, including portraits, buildings, documents, and outdoor scenes. Each image type contains different colors, textures, and edges. Testing several examples would provide stronger evidence about when each technique is useful.
-
-Another improvement would be to compare different Gaussian blur kernel sizes, such as 3 × 3, 5 × 5, and 9 × 9, and discuss the resulting loss of detail. Canny edge detection could be evaluated using several threshold pairs to show how sensitivity changes. When reporting results, it is important to keep the input images and processing settings documented so the comparison can be reproduced.
-
-Finally, future work could investigate histogram equalization, thresholding, morphological operations, or more advanced image-processing techniques. These methods would expand the project beyond the three introductory operations discussed here.
-
-## 10. Conclusion
+## 7. Conclusion
 
 Image processing with Python offers a practical introduction to transforming and analyzing digital images. OpenCV provides ready-to-use functions for common operations, allowing students to focus on understanding what each transformation does and when it is appropriate.
 
@@ -196,13 +170,13 @@ This article compared grayscale conversion, Gaussian blur, and Canny edge detect
 
 The article provides a reproducible example and a proposed framework for comparing visual outputs. A complete experimental report would additionally require running the program, inserting genuine output images, and discussing the observed results. These steps are necessary before claiming that any practical experiment has been completed.
 
-## 11. References
+## 8. References
 
-1. Gonzalez, R. C., & Woods, R. E. (2018). *Digital Image Processing* (4th ed.). Pearson.
-2. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image Processing, Analysis, and Machine Learning* (4th ed.). Cengage Learning.
-3. Bradski, G. (2000). The OpenCV Library. *Dr. Dobb's Journal of Software Tools*.
+1. Gonzalez, R. C., & Woods, R. E. (2018). *Digital Image Processing* (4th ed.). [Pearson](https://www.pearson.com).
+2. Canny, J. (1986). A computational approach to edge detection. *IEEE Transactions on Pattern Analysis and Machine Learning*, PAMI-8(6), 679-698. [IEEE Xplore](https://ieeexplore.ieee.org/document/4767851).
+3. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image Processing, Analysis, and Machine Learning* (4th ed.). [Cengage Learning](https://www.cengage.com).
 
-## 12. YouTube Demonstration
+## 9. YouTube Demonstration
 
 **Video link:** [Add your YouTube demonstration link here](https://www.youtube.com/)
 
