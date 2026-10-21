@@ -9,11 +9,11 @@
 
 ## 1. Introduction
 
-Image processing uses computational methods to transform, analyze, and extract useful information from digital images. A digital image is represented as a grid of pixels. Color images generally contain multiple color channels, whereas grayscale images describe brightness using a single intensity value. Python provides accessible tools for loading, processing, and displaying these images.
+Image processing is the process of modifying and analyzing digital images using computer programs. Python is commonly used for image processing because it provides libraries such as OpenCV, NumPy, and Matplotlib.
 
-This article compares three common operations: **grayscale conversion**, **Gaussian blur**, and **Canny edge detection**. Although they are often introduced together, they do not have identical goals. Grayscale conversion removes color information; Gaussian blur smooths details; and Canny edge detection identifies boundaries where brightness changes sharply. Examining their outputs side by side makes these differences easy to see.
+This article focuses on three image-processing techniques: **Grayscale Conversion, Gaussian Blur, and Canny Edge Detection**. Grayscale conversion changes a color image into shades of gray, Gaussian blur reduces image details by smoothing, and Canny edge detection identifies object boundaries.
 
-For the practical demonstration, a colorful parrot photograph was processed with **OpenCV** and visualized using **Matplotlib**. The same source photograph was used for all three operations. This article describes the code that was actually executed, its settings, and the visible results. The source photograph should be used and shared only with appropriate permission or licensing.
+The purpose of this project is to demonstrate these techniques using Python and compare their results using the same input image.
 
 ## 2. Objectives
 
@@ -160,7 +160,7 @@ python image_processing.py
 
 A Matplotlib window should appear with four images. The program also writes `results.png` to the same folder. Depending on the graphical backend, the completion message may appear in the terminal after the image window is closed.
 
-## 6. Results and Comparison
+## 6. Results and Comparison (Output)
 
 **Status: The program was executed successfully on the MacBook, and the four-panel output was visually inspected.** The input was a colorful parrot photograph. The figure showed the original image, its grayscale version, a blurred color version, and a Canny edge map.
 
@@ -183,12 +183,6 @@ A Matplotlib window should appear with four images. The program also writes `res
 
 The grayscale result shows that brightness differences can preserve recognizable shapes even after the colors disappear. The Gaussian blur result demonstrates that smoothing affects fine detail without necessarily removing color. The Canny result makes the parrot's outline and some feather structures visible as thin lines, although it also captures numerous small texture edges.
 
-### 6.3 Discussion
-
-These results show why the techniques serve different roles. Grayscale conversion can be useful before algorithms that do not require color. Gaussian blur is useful when reducing small variations or noise is more important than preserving every detail. Canny edge detection is useful when identifying object boundaries or prominent structures.
-
-The selected parameters influence the outputs. A 15 × 15 blur is visually strong for this photograph; a smaller kernel would generally retain more detail. The Canny thresholds of 100 and 200 produce a detailed edge map for this input, but they are not necessarily optimal for other images. This exercise is a **qualitative visual comparison**, not a benchmark of speed, detection accuracy, or noise-removal performance.
-
 ## 7. Conclusion
 
 This practical demonstration successfully applied three image-processing operations to one parrot photograph using Python and OpenCV. Grayscale conversion removed the colors while retaining visible shape and texture. Gaussian blur softened the color image, reducing fine details. Canny edge detection emphasized the bird's boundaries and feather structures as white lines on a dark background.
@@ -197,13 +191,11 @@ The experiment illustrates that image-processing methods should be selected acco
 
 ## 8. References
 
-1. Gonzalez, R. C., & Woods, R. E. (2018). *Digital image processing* (4th ed.). Pearson. https://books.google.com/books?id=0F05vgAACAAJ
-2. Canny, J. (1986). A computational approach to edge detection. *IEEE Transactions on Pattern Analysis and Machine Intelligence, PAMI-8*(6), 679–698. https://doi.org/10.1109/TPAMI.1986.4767851
-3. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image processing, analysis, and machine vision* (4th ed.). Cengage Learning.
-4. OpenCV. (n.d.). *Basic operations on images*. OpenCV Documentation. https://docs.opencv.org/4.x/d3/df2/tutorial_py_basic_ops.html
-5. OpenCV. (n.d.). *Smoothing images*. OpenCV Documentation. https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
-6. OpenCV. (n.d.). *Canny edge detection*. OpenCV Documentation. https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html
-7. OpenCV. (n.d.). *Changing colorspaces*. OpenCV Documentation. https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
+1. Canny, J. (1986). A computational approach to edge detection. *IEEE Transactions on Pattern Analysis and Machine Intelligence, PAMI-8*(6), 679–698. https://doi.org/10.1109/TPAMI.1986.4767851
+2. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image processing, analysis, and machine vision* (4th ed.). Cengage Learning.
+3. OpenCV. (n.d.). *Basic operations on images*. OpenCV Documentation. https://docs.opencv.org/4.x/d3/df2/tutorial_py_basic_ops.html
+4. OpenCV. (n.d.). *Smoothing images*. OpenCV Documentation. https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
+5. OpenCV. (n.d.). *Canny edge detection*. OpenCV Documentation. https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html
 
 ## 9. YouTube Demonstration
 
