@@ -5,7 +5,7 @@
 **NAME:** MUHAMMAD SYAMIL AFIF BIN MOHD ZAIDI<br>
 **STUDENT ID:** 2025195645<br>
 **CLASS:** CDCS2554A<br>
-**COURSE CODE:** ITT 400 - Fundamentals of Computer Graphic and Visualization<br>
+**COURSE CODE:** ITT 440 - Network Programming<br>
 **YOUTUBE LINK:** []<br>
 
 ---
