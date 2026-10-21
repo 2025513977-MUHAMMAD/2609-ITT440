@@ -6,7 +6,7 @@
 **STUDENT ID:** 2025195645<br>
 **CLASS:** CDCS2554A<br>
 **COURSE CODE:** ITT 440 - Network Programming<br>
-**YOUTUBE LINK:** [<br>
+**YOUTUBE LINK:** <br>
 
 ---
 
