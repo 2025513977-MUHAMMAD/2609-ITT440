@@ -7,7 +7,7 @@
 **CLASS:** CDCS2554A<br>
 **TOPIC:** Fundamental Of Computer Graphic And Visualisation<br>
 **COURSE CODE:** ITT 440 - Network Programming<br>
-**YOUTUBE LINK:** <br>
+**YOUTUBE LINK:** https://youtu.be/Z2Rtt6l2T2M<br>
 
 ---
 
