@@ -97,7 +97,7 @@ cv2.imwrite("edges.jpg", edges)
 
 ## 5. Complete Example Program
 
-The following script combines the three operations and creates a four-panel comparison. It is adapted from standard usage patterns described in the OpenCV documentation; see the references below.
+The following script combines the three operations and creates a four-panel comparison. It is adapted from standard usage patterns described in the OpenCV documentation and reference literature.
 
 ```python
 import cv2
@@ -198,12 +198,9 @@ The article provides a reproducible example and a proposed framework for compari
 
 ## 11. References
 
-1. OpenCV. (n.d.). *Changing colorspaces.* OpenCV-Python Tutorials. https://docs.opencv.org/4.x/df/d9d/tutorial_py_colorspaces.html
-2. OpenCV. (n.d.). *Smoothing images.* OpenCV-Python Tutorials. https://docs.opencv.org/4.x/d4/d13/tutorial_py_filtering.html
-3. OpenCV. (n.d.). *Canny edge detection.* OpenCV-Python Tutorials. https://docs.opencv.org/4.x/da/d22/tutorial_py_canny.html
-4. OpenCV. (n.d.). *Getting started with images.* OpenCV-Python Tutorials. https://docs.opencv.org/4.x/dc/d2e/tutorial_py_image_display.html
-5. Matplotlib Development Team. (n.d.). *Matplotlib documentation.* https://matplotlib.org/stable/
-6. NumPy Developers. (n.d.). *NumPy documentation.* https://numpy.org/doc/stable/
+1. Gonzalez, R. C., & Woods, R. E. (2018). *Digital Image Processing* (4th ed.). Pearson.
+2. Sonka, M., Hlavac, V., & Boyle, R. (2014). *Image Processing, Analysis, and Machine Learning* (4th ed.). Cengage Learning.
+3. Bradski, G. (2000). The OpenCV Library. *Dr. Dobb's Journal of Software Tools*.
 
 ## 12. YouTube Demonstration
 
@@ -213,4 +210,4 @@ A suitable demonstration would explain the selected image, show how the program 
 
 ---
 
-**Submission note:** This is a research-based article draft, not a completed experimental report. The previously uploaded performance-testing assignment brief specifies different requirements, so confirm that this image-processing topic is accepted for the relevant assignment before submitting.
+**Submission note:** This is a research-based article draft, not a completed experimental report. Confirm that this image-processing topic is accepted for the relevant assignment before submitting.
