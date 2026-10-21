@@ -83,18 +83,18 @@ Enter number of processes: 4
 ========== GRAPHIC ANALYTICS REPORT ==========
 
 Vertices distribution by object type:
-Terrain (Green) : 167410 vertices (16.74%)
-Sky (Blue)      : 166602 vertices (16.66%)
-Water (Cyan)    : 166495 vertices (16.65%)
-Buildings (Grey): 166977 vertices (16.70%)
-Characters (Red): 166240 vertices (16.62%)
+Terrain (Green) : 199843 vertices (19.98%)
+Sky (Blue)      : 199495 vertices (19.95%)
+Water (Cyan)    : 199958 vertices (20.00%)
+Buildings (Grey): 200565 vertices (20.06%)
+Characters (Red): 200139 vertices (20.01%)
 
 Total vertices processed: 1000000
 
 ========== PERFORMANCE ==========
-Sequential      : 169.2737s
-Threading       : 179.4243s
-Multiprocessing : 59.3737s
+Sequential      : 5.0578s
+Threading       : 12.7011s
+Multiprocessing : 1.7012s
 Fastest Method  : Multiprocessing
 ```
 
