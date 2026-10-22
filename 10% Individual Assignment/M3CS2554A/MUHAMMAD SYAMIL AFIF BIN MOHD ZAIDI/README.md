@@ -13,7 +13,7 @@
 
 ## PROBLEM STATEMENT
 
-In computer graphics and visualization, rendering highly detailed objects—such as 3D models with millions of polygons or particle simulations requires immense computational power. Processing graphical data sequentially often creates a processing bottleneck on the CPU, leading to prolonged execution times. 
+In computer graphics and visualization, rendering highly detailed objects such as 3D models with millions of polygons or particle simulations requires immense computational power. Processing graphical data sequentially often creates a processing bottleneck on the CPU, leading to prolonged execution times. 
 
 This project focuses on simulating and evaluating the efficiency of various processing methods (sequential, threading, and multiprocessing) when handling large-scale graphical coordinate calculations. The aim is to identify which approach provides better performance and scalability for rendering high-resolution graphics.
 
