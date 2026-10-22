@@ -199,8 +199,8 @@ The experiment illustrates that image-processing methods should be selected acco
 
 ## 9. YouTube Demonstration
 
-**Video link:** _To be added after recording and uploading the demonstration._
+**Video link:** https://youtu.be/LsT8K0nv2AA
 
-The demonstration video will briefly explain the code, execute `image_processing.py` in VS Code on macOS, and show the four processed images. The video link will be added here after it has been uploaded to YouTube.
+The demonstration video will briefly explain the code, execute `image_processing.py` in VS Code on macOS, and show the four processed images.
 
 ---
