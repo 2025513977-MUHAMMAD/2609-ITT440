@@ -88,66 +88,9 @@ Canny edge detection identifies boundaries associated with strong changes in ima
 edges = cv2.Canny(grayscale, 100, 200)
 ```
 
-## 5. Complete Example Program
+## 5. Program Execution
 
-The following is the **same program used in the MacBook demonstration**. It combines all three operations and saves the final comparison figure. The implementation uses common OpenCV operations documented in the references.
-
-Create a file called `image_processing.py` and paste in this code:
-
-```python
-import cv2
-import matplotlib.pyplot as plt
-import numpy as np
-
-# Step 1: Load the original image
-image = cv2.imread("sample.jpg")
-
-if image is None:
-    raise FileNotFoundError("Please add sample.jpg to your project folder.")
-
-# Step 2: Convert the image from BGR to RGB
-original = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
-
-# Step 3: Grayscale conversion
-grayscale = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-# Step 4: Apply Gaussian blur to the color image
-blurred = cv2.GaussianBlur(original, (15, 15), 0)
-
-# Step 5: Apply Canny edge detection
-edges = cv2.Canny(grayscale, 100, 200)
-
-# Step 6: Display all four images
-plt.figure(figsize=(12, 8))
-
-plt.subplot(2, 2, 1)
-plt.imshow(original)
-plt.title("Original Image")
-plt.axis("off")
-
-plt.subplot(2, 2, 2)
-plt.imshow(grayscale, cmap="gray")
-plt.title("Grayscale Conversion")
-plt.axis("off")
-
-plt.subplot(2, 2, 3)
-plt.imshow(blurred)
-plt.title("Gaussian Blur")
-plt.axis("off")
-
-plt.subplot(2, 2, 4)
-plt.imshow(edges, cmap="gray")
-plt.title("Canny Edge Detection")
-plt.axis("off")
-
-plt.tight_layout()
-plt.savefig("results.png")
-plt.show()
-
-print("Image processing completed successfully!")
-```
-
-The NumPy import is included as part of the demonstration environment, although this short script does not call NumPy functions directly.
+The complete Python source code is provided separately in `image_processing.py` in this GitHub folder. The program reads `sample.jpg`, applies grayscale conversion, Gaussian blur, and Canny edge detection, then displays and saves the comparison as `results.png`.
 
 ### 5.1 How to Run
 
